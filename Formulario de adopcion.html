@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Adopción</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="fondo-patitas">
+  <div class="container mt-5">
+    <h1 class="text-center text-warning mb-4">Formulario de Adopción</h1>
+
+    <form id="formAdopcion" class="card p-4 sombra">
+      <div class="mb-3">
+        <label class="form-label">Nombre completo</label>
+        <input type="text" id="nombre" class="form-control" required minlength="3">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Correo electrónico</label>
+        <input type="email" id="email" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Mascota elegida</label>
+        <select id="mascota" class="form-select" required>
+          <option value="">Selecciona una</option>
+          <option value="Luna">Luna</option>
+          <option value="Rocky">Rocky</option>
+          <option value="Milo">Milo</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Motivo de adopción</label>
+        <textarea id="motivo" class="form-control" required minlength="10"></textarea>
+      </div>
+      <button type="submit" class="btn btn-warning w-100 fw-bold">Enviar solicitud</button>
+    </form>
+  </div>
+</body>
+</html>
