@@ -8,9 +8,9 @@ app = Flask(__name__)
 # !!! IMPORTANTE: REEMPLAZA ESTOS VALORES CON TUS CREDENCIALES REALES DE MySQL !!!
 DB_CONFIG = {
     'host': 'localhost',
-    'user': 'tu_usuario_mysql',      
-    'password': 'tu_contraseña_mysql',
-    'database': 'Patitas_Felices' # Asegúrate de que esta base de datos exista
+    'user': '3306',      
+    'password': '',
+    'database': 'patitas_felices' # Asegúrate de que esta base de datos exista
 }
 
 def get_db_connection():
